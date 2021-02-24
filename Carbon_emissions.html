@@ -186,6 +186,28 @@
   dangerMode: true,
 });
                     }
+
+                    
+                }
+// find for CNG
+                if ((b == "CNG")){
+                    var carb = distance.toFixed(2)*107.68
+                    var trees = carb/5900
+                    swal({
+  title: "Attention",
+  text: "The carbon emission of your trips is " + carb.toFixed(0) + " grams",
+  icon: "warning",
+  buttons: true,});
+                    if ((trees > 1)) {
+                        swal({
+  title: "Attention",
+  text: "Your journey is equal to cutting down " + trees.toFixed(0) + " trees",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+});
+                    }
+                    
                 }
                 
             // add the route to the map
